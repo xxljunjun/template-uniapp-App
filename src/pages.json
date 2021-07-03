@@ -23,54 +23,6 @@
 				"animationDuration": 100,
 				"animationType": "none"
 			}
-		},
-		{
-			"path": "pages/component/home/addMachine",
-			"style": {
-				"navigationStyle": "custom",
-				"animationDuration": 100,
-				"animationType": "none"
-			}
-		},
-		{
-			"path": "pages/component/home/help",
-			"style": {
-				"navigationStyle": "custom",
-				"animationDuration": 100,
-				"animationType": "none"
-			}
-		},
-		{
-			"path": "pages/component/home/guid",
-			"style": {
-				"navigationStyle": "custom",
-				"animationDuration": 100,
-				"animationType": "none"
-			}
-		},
-		{
-			"path": "pages/component/device/shebei",
-			"style": {
-				"navigationStyle": "custom",
-				"animationDuration": 100,
-				"animationType": "none"
-			}
-		},
-		{
-			"path": "pages/component/home/healthy/healthy",
-			"style": {
-				"navigationStyle": "custom",
-				"animationDuration": 100,
-				"animationType": "none"
-			}
-		},
-		{
-			"path": "pages/component/device/dial",
-			"style": {
-				"navigationStyle": "custom",
-				"animationDuration": 100,
-				"animationType": "none"
-			}
 		}
 	],
 	"globalStyle": {

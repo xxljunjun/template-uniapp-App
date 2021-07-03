@@ -1,5 +1,5 @@
 {
-  "name": "smartwatch",
+  "name": "xxl",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -62,6 +62,7 @@
     "flyio": "^0.6.2",
     "mescroll.js": "^1.4.2",
     "regenerator-runtime": "^0.12.1",
+    "v-viewer": "^1.6.3",
     "vue": "^2.6.11",
     "vue-class-component": "^6.3.2",
     "vue-i18n": "^8.24.4",
