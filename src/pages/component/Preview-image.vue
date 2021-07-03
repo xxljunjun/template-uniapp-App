@@ -1,5 +1,5 @@
 <template>
-  <view>
+  <view class="box">
     <!-- 一种用法 -->
     <viewer :images="imgs">
       <img v-for="src in imgs" :src="src.url" :key="src.title" />
@@ -24,7 +24,9 @@ export default {
           title: '图片1',
         },
       ],
-      images: ['/static/top@2x.png'],
+      images: [
+        'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=85690711,3884201894&fm=27&gp=0.jpg',
+      ],
     }
   },
   methods: {
@@ -38,4 +40,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50rpx;
+}
 </style>

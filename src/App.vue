@@ -15,4 +15,5 @@ export default {
 
 <style lang="scss">
 /*每个页面公共scss */
+@import 'viewerjs/dist/viewer.css';
 </style>
