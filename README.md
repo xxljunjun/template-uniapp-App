@@ -1,33 +1,14 @@
-# smartwatch
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-# 一、安装项目
+### 一、安装项目
 + npm install -g @vue/cli
 + vue create -p dcloudio/uni-preset-vue 你的项目名
 
-# 二、如何将vue/cli项目打包成apk
+### 二、如何将vue/cli项目打包成apk
 + npm run build:app-plus
 	生成了dis文件夹
 	在dist/build文件夹下在H-build编辑器中进行打包apk
 
-# 三、生成android-apk证书
+### 三、生成android-apk证书
 + Android平台打包发布apk应用，需要使用数字证书（.keystore文件）进行签名，用于表明开发者身份。
 + 需要安装微信者开发工具
 + 安装JRE环境  //可从Oracle官方下载jre安装包：https://www.oracle.com/technetwork/java/javase/downloads/index.html
@@ -37,12 +18,12 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 + keytool -list -v -keystore ./HBuilder.keystore
 ***window+R启用管理员权限操作***
 
-# 四、安装sass
+### 四、安装sass
 + npm install node-sass@4.14.1 --save-dev
 + npm install sass-loader@8.0.2 --save-dev 
 ***需要注意版本问题***
 
-# 五、安装上拉加载和下拉刷新组件
+### 五、安装上拉加载和下拉刷新组件
 + npm install --save mescroll.js
 ```
 methods: {
@@ -113,7 +94,7 @@ import MescrollUni from "@/pages/mescroll-uni/mescroll-uni.vue"; //上拉加载�
 Vue.component('mescroll-uni', MescrollUni)//上拉加载和下拉刷新
 ```
 
-# 六、安装i18n国际化
+### 六、安装i18n国际化
 + npm install vue-i18n --save
 + //在i18n.js中
 import Vue from 'vue';
@@ -138,8 +119,9 @@ Vue.prototype.$i18nMsg = i18n.messages[i18n.locale] //挂载上去this.$i18nMsg.
 + 在i18n文件夹中
 zh.js
 en.js
+//this.$i18n.locale = this.$i18n.locale === 'zh' ? 'en' : 'zh'
 
-# 七、安装vuex
+### 七、安装vuex
 + npm install vuex --save
 + 新建store/index.js
 import Vue from 'vue'
@@ -183,13 +165,13 @@ const app = new Vue({
 })
 app.$mount()
 
-# 八、安装vue-router
+### 八、安装vue-router
 + npm install vue-router
 + 在main.js中
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
-# 九、封装uni.request(options)请求
+### 九、封装uni.request(options)请求
 + @/serve/request.js
 + 解决跨域问题manifest.json
 "h5": {
@@ -209,7 +191,7 @@ Vue.use(VueRouter)
         }
     }
 
-# 十、解决用户栏与顶部栏重合问题
+### 十、解决用户栏与顶部栏重合问题
 + 在manifest.json中
  "app-plus": {
         /* 导航栏和状态栏重叠问题 */
@@ -217,13 +199,13 @@ Vue.use(VueRouter)
             "immersed": false
         },
 	}
-# 十一、封装tabBar组件
+### 十一、封装tabBar组件
 + 利用父子组件传值控制路由跳转时tabBar的class类名的变化实现切换效果
 + uniapp的获取路由的方法
 	let routes = getCurrentPages() // 获取当前打开过的页面路由数组
     let curRoute = routes[routes.length - 1].route // 获取当前页面路由，也就是最后一个打开的页面路由
 
-# 十二、图片预览插件v-viewer
+### 十二、图片预览插件v-viewer
 + npm install v-viewer -s
 ```
 import Viewer from 'v-viewer'
